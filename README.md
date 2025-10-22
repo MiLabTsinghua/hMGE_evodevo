@@ -1,44 +1,80 @@
 
 
-# Bioinformatics
+# Bioinformatic Method
+## Non-epithelial radial glial cells sustain GABAergic neurogenesis and gliogenesis in the developing human brain
+The human cerebral cortex has an extensive and diverse complement of inhibitory neurons (INs), which contributes to the heightened cognitive capability of our species. However, the mechanisms underlying the generation of the vast repertoire of human INs remain elusive. We performed spatial and single-cell transcriptomics of human medial ganglionic eminence (hMGE), a pivotal source of INs destined for the cerebral cortex and subpallium, to build the developmental trajectories of MGE-derived cells throughout pregnancy. We identified spatiotemporally and molecularly segregated progenitor cell populations fated to produce distinct types of INs. Notably, we found a novel progenitor cell type in the hMGE subventricular zone (SVZ RGC) with unique molecular and cellular features. We demonstrated that SVZ RGCs maintained the production of INs and glial cells throughout human brain development. Our findings reveal evolutionarily distinct features of IN generation and shed light on the unique mechanisms underlying human brain development.
 
-Non-epithelial radial glial cells sustain GABAergic neurogenesis and gliogenesis in the developing human brain
-The human cerebral cortex expanded dramatically during evolution, with a notable increase in the ratio of inhibitory to excitatory neurons. This shift supports complex circuitry and higher-order cognition. However, how the human brain generates its diverse inhibitory neurons remains unclear.
+### Keywords
+Human brain development; brain evolution; medial ganglionic eminence; cortical inhibitory neurons; progenitor cell diversity; neuronal diversification; spatial transcriptomics; single-cell RNA sequencing
+
 
 <!-- PROJECT SHIELDS -->
 
+<!--
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
+-->
 
 <!-- PROJECT LOGO -->
 <br />
 
 <p align="center">
-  <a href="https://github.com/shaojintian/Best_README_template/">
+  <a href="https://github.com/MiLabTsinghua/hMGE_evodevo/">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">"完美的"README模板</h3>
+  <h3 align="center">Non-epithelial radial glial cells sustain GABAergic neurogenesis and gliogenesis in the developing human brain</h3>
   <p align="center">
-    一个"完美的"README模板去快速开始你的项目！
+    Bioinformatic Method
     <br />
-    <a href="https://github.com/shaojintian/Best_README_template"><strong>探索本项目的文档 »</strong></a>
+    <a href="https://github.com/MiLabTsinghua/hMGE_evodevo"><strong>探索本项目的文档 »</strong></a>
     <br />
+  <!--   
     <br />
-    <a href="https://github.com/shaojintian/Best_README_template">查看Demo</a>
+    <a href="https://github.com/MiLabTsinghua/hMGE_evodevo">查看Demo</a>
     ·
-    <a href="https://github.com/shaojintian/Best_README_template/issues">报告Bug</a>
+    <a href="https://github.com/MiLabTsinghua/hMGE_evodevo/issues">报告Bug</a>
     ·
-    <a href="https://github.com/shaojintian/Best_README_template/issues">提出新特性</a>
+    <a href="https://github.com/MiLabTsinghua/hMGE_evodevo/issues">提出新特性</a>
+   -->
   </p>
 
 </p>
 
+## Data Resource
 
+### Raw Data
+The raw sequence data reported in this paper have been deposited in the GenomeSequence Archive in National Genomics Data Center ([HRA009228](https://ngdc.cncb.ac.cn/gsa-human/HRA009228), [HRA009966](https://ngdc.cncb.ac.cn/gsa-human/HRA009966), [HRA012942](https://ngdc.cncb.ac.cn/gsa-human/HRA012942)) that are publicly accessible at https://ngdc.cncb.ac.cn/gsa-human
+
+### Processed Data
+The processed data in this paper have been deposited in the Open Archive for Miscellaneous Data in National Genomics Data Center ([OMIX012484](https://ngdc.cncb.ac.cn/omix/OMIX012484), [OMIX](https://ngdc.cncb.ac.cn/omix/OMIX)) that are publicly accessible at https://ngdc.cncb.ac.cn/omix/
+
+### Paper Link
+
+[Non-epithelial radial glial cells sustain GABAergic neurogenesis and gliogenesis in the developing human brain](https://www.nature.com/articles/)
+
+#### INTRODUCTION
+The human cerebral cortex expanded dramatically during evolution, with a notable increase in the ratio of inhibitory to excitatory neurons. This shift supports complex circuitry and higher-order cognition. However, how the human brain generates its diverse inhibitory neurons remains unclear.
+
+#### RATIONALE
+Cortical outer radial glia (oRG, also known as bRG), a primate-enriched progenitor population in the cortical subventricular zone (SVZ), has been identified as a key driver of the expanded production of excitatory neurons through prolonged neurogenesis. In comparison, the vast majority of cortical GABAergic inhibitory neurons originate from the subpallium, specifically the medial ganglionic eminence (MGE), an important progenitor domain in the developing brain. Notably, the MGE in primates, particularly in human species, shows increased complexity through the evolutionarily expanded SVZ and the emergence of distinct cellular organization. This raises a pivotal question: do novel subpallial progenitor populations, akin to oRG cells, amplify inhibitory neuron production?
+
+#### RESULTS
+We mapped the spatiotemporal landscape of neurogenesis and gliogenesis in the human MGE, revealing a markedly expanded SVZ that sustains prolonged inhibitory-neuron production. Within this niche we identified a novel primate-enriched radial glial population—SVZ RGCs—absent in mice but present in macaques. These SVZ RGCs continuously generate GABAergic interneurons and glia throughout development, providing a new cellular substrate for the evolutionary expansion of human inhibitory circuitry.
+
+#### CONCLUSION
+Our study revealed evolutionarily distinct features of human inhibitory neuron generation and shed light on the unique mechanisms underlying human brain development. Notably, the hMGE SVZ RGC is a new addition to the pantheon of neural progenitor cell types, marking an important new cytogenic source in the human brain.
+
+#### FIGURE LEGEND
+hMGE SVZ RGCs maintain the production of GABAergic inhibitory neurons in the developing human brain. we depict a comprehensive cellular and molecular landscape of hMGE (box) development from gestational week (GW) 9 to 39 and uncovered an evolutionarily distinct RGC type within the hMGE SVZ (SVZ RGC) with unique molecular and cellular features. We identified spatiotemporally and molecularly segregated progenitor cell populations (Pie charts in different colors) fated to produce distinct types of INs (Arrows in different colors). We demonstrated that SVZ RGCs maintained the production of INs throughout human brain development.
+
+
+
+<!-- 
  本篇README.md面向开发者
  
 ## 目录
@@ -160,7 +196,11 @@ xxx@xxxx
 - [Animate.css](https://daneden.github.io/animate.css)
 - [xxxxxxxxxxxxxx](https://connoratherton.com/loaders)
 
+-->
+
 <!-- links -->
+
+<!-- 
 [your-project-path]:shaojintian/Best_README_template
 [contributors-shield]: https://img.shields.io/github/contributors/shaojintian/Best_README_template.svg?style=flat-square
 [contributors-url]: https://github.com/shaojintian/Best_README_template/graphs/contributors
@@ -174,7 +214,7 @@ xxx@xxxx
 [license-url]: https://github.com/shaojintian/Best_README_template/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/shaojintian
-
+ -->
 
 
 

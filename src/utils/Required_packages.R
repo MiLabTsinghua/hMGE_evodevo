@@ -12,19 +12,19 @@
 #-------------------------------------------------------------------------------
 ###############################################################################
 
-# ------ 初始化环境 ------
+# ------ Initialize environment ------
 # rm(list = ls())
 options(stringsAsFactors = FALSE)
 # set.seed(2024)
 
-# 加载必要包
+# Load required packages
 # require_package <- function(pkg) {
 #   if (!require(pkg, character.only = TRUE)) {
-#     stop("缺少必需依赖包: ", pkg, "\n使用install.packages('", pkg, "')安装")
+#     stop("Required dependency package missing: ", pkg, "\nInstall using install.packages('", pkg, "')")
 #   }
 # }
 # require_package("tidyverse")
-# require_package("here")  # 使用here包管理路径
+# require_package("here")  # Use here package for path management
 
 require(Seurat)
 require(clustree)
@@ -54,9 +54,9 @@ require(rhdf5)
 require(Matrix)
 
 require(RColorBrewer)
-#palette <- colorRampPalette(brewer.pal(9, "YlGnBu"))(3)  # 高级配色方案
+#palette <- colorRampPalette(brewer.pal(9, "YlGnBu"))(3)  # Advanced color scheme
 
-library(org.Hs.eg.db) # human的OrgDB
+library(org.Hs.eg.db) # human OrgDB
 library(clusterProfiler)
 library(enrichplot)
 library(ggplot2)
