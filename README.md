@@ -24,7 +24,7 @@ Human brain development; brain evolution; medial ganglionic eminence; cortical i
 
 <p align="center">
   <a href="https://github.com/MiLabTsinghua/hMGE_evodevo/">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="images/logo.png" alt="Logo" width="1800" height="1200">
   </a>
 
   <h3 align="center">Non-epithelial radial glial cells sustain GABAergic neurogenesis and gliogenesis in the developing human brain</h3>

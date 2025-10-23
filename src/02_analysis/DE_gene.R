@@ -8,20 +8,17 @@ test.markers = markers_test;test.markers_filtered = test.markers %>% group_by(cl
   slice_min(n = 10, order_by = p_val_adj, with_ties = F) %>% as.data.frame()
 
 Anno = c(
-  # Progenitor 
-  # "VIM", "HES1", "FABP7", "NES","PCNA",
-  # "ASCL1","PTTG1",
-  # MGE-derive "PLS3", "SOX6",
+  # MGE-derive
   "LHX6", "NKX2-1",
-  # OPC "OLIG1", "EGFR",
+  # OPC
   "PDGFRA", "PCDH15", 
-  # APC  "S100B", "SPARCL1","AQP4",  "ALDOC", 
+  # APC
   "GFAP", "SOX9", 
-  # Endothelium "MFSD2A",  "CD34",
+  # Endothelium
   "TIE1",  "PECAM1",
-  # Pericyte "KCNJ8", "PDGFRB",
+  # Pericyte
   "ANPEP", "RGS5", 
-  # Microglia "P2RY12", "ABI3",
+  # Microglia
   "TMEM119",  "CX3CR1"
 );
 gene_selected = c(union(test.markers_filtered$gene[1:10],  Anno[1:3]),
@@ -33,7 +30,7 @@ gene_selected = c(union(test.markers_filtered$gene[1:10],  Anno[1:3]),
                   union(test.markers_filtered$gene[61:70], Anno[14:15])
 )
 
-write.xlsx(markers_test, file = "../../results/figures/Figure1_C_FindMarkerResults.xlsx")
+write.xlsx(markers_test, file = "../../results/tables/Figure1_C_FindMarkerResults.xlsx")
 save(test.markers_filtered, Anno, gene_selected, file = "../../data/processed/Figure1_C.RData")
 
 ## Figure 2
@@ -48,11 +45,11 @@ test.markers_filtered = test_markers %>%
   slice_min(n = 10, order_by = p_val_adj, with_ties = F) %>% as.data.frame()
 Anno = list(# RGC
   c("HES1", "CLU", "FABP7", "LIX1", "PTN"),
-  c("VIM", "SOX5", "NES", "SOX2"), #"", #"OLIG2", # "HES5"
+  c("VIM", "SOX5", "NES", "SOX2"),
   c("DACH1", "CACNA1E", "FBLN7"),
   c("ASCL1", "DLX2"));
 
-write.xlsx(markers_test, file = "../../results/figures/Figure2_C_FindMarkerResults.xlsx")
+write.xlsx(markers_test, file = "../../results/tables/Figure2_C_FindMarkerResults.xlsx")
 save(test.markers_filtered, Anno, file = "../../data/processed/Figure2_C.RData")
 
 #### Figure 2_F
@@ -75,38 +72,70 @@ Anno = list(# RGC
   # Progenitor
   c("MKI67", "TOP2A"#, "DLX1", "DLX2"
   ),
-  # IPC
-  # c(
-  #   "DLX1", "DLX2"#, "ASCL1", "DLX6"
-  #   # ,"FABP7"#, "EGFR"
-  # ),
-  # Progenitor "VIM", "HES1", "FABP7", "NES","PCNA","ASCL1",
-  # "TOP2A", "PTTG1",  "MKI67", "DLX1",
   # MGE-derive
   c(
-    "LHX6"#, "PLS3", "SOX6", "NKX2-1"
+    "LHX6"
   ),
   # OPC 
   c(
-    "PDGFRA"#,"OLIG1",  "PCDH15", "EGFR"
+    "PDGFRA"
   ),
-  # APC  "S100B", "SPARCL1",
+  # APC
   c(
-    "AQP4", "SOX9"#,"GFAP",   "ALDOC"
+    "AQP4", "SOX9"
   ), 
   # Endothelium
   c(
-    "TIE1", "PECAM1"#"MFSD2A", "CD34", 
+    "TIE1", "PECAM1"
   ),
   # Pericyte
   c(
-    "RGS5"#, "PDGFRB","ANPEP", "KCNJ8", 
+    "RGS5"
   ),
   # Microglia
   c(
-    "CX3CR1"#"ABI3", "TMEM119", "P2RY12", 
+    "CX3CR1"
   )
 );
 
-write.xlsx(markers_test, file = "../../results/figures/Figure2_F_FindMarkerResults.xlsx")
+write.xlsx(markers_test, file = "../../results/tables/Figure2_F_FindMarkerResults.xlsx")
 save(test.markers_filtered, Anno, file = "../../data/processed/Figure2_F.RData")
+
+## Figure 4
+
+#### Figure 4_A
+
+Idents(Seurat_test) = factor(Seurat_test$Revision_NeuronLineageType, levels = c("Neuron_EPHA5MEF2C", "Neuron_LHX6NFIA", "Neuron_CRABP1ANGPT2", "Neuron_LHX8ISL1", "Neuron_NR2F1NR2F2"))
+test_markers = FindAllMarkers(Seurat_test, only.pos = T)
+test.markers_filtered = test_markers %>%
+  group_by(cluster) %>%
+  # slice_max(n = 10, order_by = avg_log2FC) %>% as.data.frame()
+  slice_min(n = 10, order_by = p_val_adj, with_ties = F) %>% as.data.frame()
+Anno = list(
+  #
+  c("EPHA5", "MEF2C"),
+  c("LHX6", "NFIA"),
+  c("CRABP1", "ANGPT2"),
+  c("LHX8", "ISL1"),
+  c("NR2F1", "NR2F2"));
+gene_selected = c(
+  union(test.markers_filtered$gene[1:10], Anno[[1]]),
+  union(test.markers_filtered$gene[11:20], Anno[[2]]),
+  union(test.markers_filtered$gene[21:30], Anno[[3]]),
+  union(test.markers_filtered$gene[31:40], Anno[[4]]),
+  union(test.markers_filtered$gene[41:50], Anno[[5]])
+)
+
+write.xlsx(markers_test, file = "../../results/tables/Figure4_A_FindMarkerResults.xlsx")
+save(test.markers_filtered, Anno, file = "../../data/processed/Figure4_A.RData")
+
+
+
+
+
+
+
+
+
+
+
