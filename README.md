@@ -51,7 +51,7 @@ Human brain development; brain evolution; medial ganglionic eminence; cortical i
 The raw sequence data reported in this paper have been deposited in the GenomeSequence Archive in National Genomics Data Center ([HRA009228](https://ngdc.cncb.ac.cn/gsa-human/HRA009228), [HRA009966](https://ngdc.cncb.ac.cn/gsa-human/HRA009966), [HRA012942](https://ngdc.cncb.ac.cn/gsa-human/HRA012942)) that are publicly accessible at https://ngdc.cncb.ac.cn/gsa-human
 
 ### Processed Data
-The processed data in this paper have been deposited in the Open Archive for Miscellaneous Data in National Genomics Data Center ([OMIX012484](https://ngdc.cncb.ac.cn/omix/OMIX012484), [OMIX](https://ngdc.cncb.ac.cn/omix/OMIX)) that are publicly accessible at https://ngdc.cncb.ac.cn/omix/
+The processed data in this paper have been deposited in the Open Archive for Miscellaneous Data in National Genomics Data Center ([OMIX012484](https://ngdc.cncb.ac.cn/omix/OMIX012484), [OMIX012509](https://ngdc.cncb.ac.cn/omix/OMIX012509)) that are publicly accessible at https://ngdc.cncb.ac.cn/omix/
 
 ### Paper Link
 
